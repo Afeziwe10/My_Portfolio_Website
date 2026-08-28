@@ -1,0 +1,282 @@
+/* ===========================
+   SHARED HELPERS
+   =========================== */
+.eyebrow {
+  display: inline-block;
+  color: #0F9E99;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.title-divider {
+  width: 60px;
+  height: 3px;
+  background: #0F9E99;
+  border-radius: 3px;
+  margin-top: 14px;
+}
+
+.title-divider.small {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   ABOUT HERO
+   =========================== */
+.about-hero,
+.about-panels,
+.about-values {
+  position: relative;
+  z-index: 1;
+  padding: 0 6vw;
+}
+
+.about-hero {
+  padding-top: 140px;
+  padding-bottom: 70px;
+  background:
+    radial-gradient(circle at 85% 0%, rgba(15, 158, 153, 0.12), transparent 45%),
+    #EFE9E0;
+}
+
+.about-panels {
+  background:
+    radial-gradient(circle at 10% 30%, rgba(15, 158, 153, 0.10), transparent 45%),
+    #EFE9E0;
+}
+
+.about-values {
+  background:
+    radial-gradient(circle at 90% 100%, rgba(15, 158, 153, 0.10), transparent 45%),
+    #EFE9E0;
+}
+
+.about-hero-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-hero-text h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  color: #1F1B16;
+  margin: 16px 0 22px;
+}
+
+.about-hero-text h1 span {
+  color: #0F9E99;
+}
+
+.about-hero-text > p {
+  color: #6B655A;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* Stat cards */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #FFFFFF;
+  border: 1px solid #E3DACB;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.stat-card {
+  padding: 10px;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(15, 158, 153, 0.12);
+  color: #0F9E99;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.stat-card h3 {
+  color: #1F1B16;
+  font-size: 1.7rem;
+  margin: 0 0 4px;
+}
+
+.stat-card p {
+  color: #6B655A;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+/* ===========================
+   MY STORY + MY APPROACH
+   =========================== */
+.about-panels {
+  padding-bottom: 70px;
+}
+
+.about-panels-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #E3DACB;
+  border-radius: 20px;
+  padding: 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.panel-story > p {
+  color: #6B655A;
+  line-height: 1.75;
+  font-size: 0.98rem;
+  margin: 0 0 18px;
+}
+
+.approach-row {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #E3DACB;
+}
+
+.approach-row:first-of-type {
+  padding-top: 18px;
+}
+
+.approach-row:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.approach-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(15, 158, 153, 0.12);
+  color: #0F9E99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.approach-row h3 {
+  color: #1F1B16;
+  font-size: 1.02rem;
+  margin: 0 0 6px;
+}
+
+.approach-row p {
+  color: #6B655A;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.panel-approach > .eyebrow {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ===========================
+   MY VALUES
+   =========================== */
+.about-values {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(15, 158, 153, 0.12);
+  color: #0F9E99;
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+
+.value-card h3 {
+  color: #1F1B16;
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.value-card p {
+  color: #6B655A;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ===========================
+   ABOUT PAGE – RESPONSIVE
+   =========================== */
+@media (max-width: 1000px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-panels-grid {
+    grid-template-columns: 1fr;
+    padding: 34px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding-top: 110px;
+  }
+
+  .about-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-panels-grid {
+    padding: 24px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

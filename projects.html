@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Projects | Afeziwe Thandani</title>
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <div class="logo">Afez</div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+  <section class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-hero">
+      <div class="title-divider"></div>
+      <p>A collection of projects I've worked on. Each one represents a challenge,
+      a solution, and skills I've developed along the way.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="desktop">Desktop</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+    </div>
+
+    <!-- Project grid -->
+    <div class="projects-grid">
+
+      <!-- Xclusive Society -->
+      <div class="proj-card" data-category="web">
+        <div class="proj-thumb">
+          <img src="Images/Xclusive Society Picture.png" alt="Xclusive Society">
+          <span class="proj-badge web">Web</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title-row">
+            <h3>Xclusive Society</h3>
+            <a href="https://github.com/st10365776/xclusive_society.git" aria-label="View Xclusive Society project">&#8599;</a>
+          </div>
+          <p class="proj-desc">
+            A PHP-based e-commerce platform for a fashion retail brand, with
+            product browsing, cart and checkout, user accounts, seller
+            submissions, and an admin dashboard for managing it all.
+          </p>
+          <div class="proj-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cybersecurity Chatbot -->
+      <div class="proj-card" data-category="desktop">
+        <div class="proj-thumb">
+          <img src="Images/Cybersecurity Chatbot Picture.png" alt="Cybersecurity Chatbot">
+          <span class="proj-badge desktop">Desktop</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title-row">
+            <h3>Cybersecurity Chatbot</h3>
+            <a href="https://github.com/Afeziwe10/POE.git" target="_blank" rel="noopener noreferrer" aria-label="View Cybersecurity Chatbot ">&#8599;</a>
+          </div>
+          <p class="proj-desc">
+            C# desktop application that provides cybersecurity awareness through
+            an interactive chatbot, quiz system, task reminders and activity logging.
+          </p>
+          <div class="proj-tags">
+            <span>C#</span>
+            <span>WPF</span>
+            <span>.NET</span>
+            <span>SQL Server</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contract Monthly Claim System -->
+      <div class="proj-card" data-category="desktop">
+        <div class="proj-thumb">
+          <img src="Images/Contract Monthly Claim System Picture.png" alt="Contract Monthly Claim System">
+          <span class="proj-badge desktop">Desktop</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title-row">
+            <h3>Contract Monthly Claim System</h3>
+            <a href="https://github.com/Afez04/Contract-Monthly-Claim-System.git" aria-label="View Contract Monthly Claim System project">&#8599;</a>
+          </div>
+          <p class="proj-desc">
+            A C# desktop application for managing contract claims, with dedicated
+            portals for lecturers, coordinators, managers and HR officers.
+          </p>
+          <div class="proj-tags">
+            <span>C#</span>
+            <span>WPF</span>
+            <span>SQL Server</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MyBudgetPro -->
+      <div class="proj-card" data-category="mobile">
+        <div class="proj-thumb app-thumb">
+          <img src="Images/MyBudgetPro Picture.png" alt="MyBudgetPro">
+          <span class="proj-badge mobile">Mobile</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title-row">
+            <h3>MyBudgetPro</h3>
+            <a href="https://github.com/RCNMBCampus/opsc6311-part-2-group-1" target="_blank" rel="noopener noreferrer" aria-label="View MyBudgetPro repository">&#8599;</a>
+          </div>
+          <p class="proj-desc">
+            An Android budgeting app that helps users track income, expenses
+            and remaining balance, log transactions, and get AI-powered
+            budgeting assistance, all from a clean dashboard.
+          </p>
+          <div class="proj-tags">
+            <span>Kotlin</span>
+            <span>Android Studio</span>
+            <span>Android</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="projects-footnote">Click on any project card to view more details</p>
+  </section>
+
+ <!-- JavaScript -->
+  <script src="script.js" defer></script>
+
+  <!-- Request Code Access Modal -->
+  <div class="code-modal-overlay" id="codeModalOverlay">
+    <div class="code-modal">
+      <button class="code-modal-close" id="codeModalClose" aria-label="Close">&times;</button>
+      <h3>Request Source Code Access</h3>
+      <p class="code-modal-sub">
+        This project's code is kept private. Tell me a bit about yourself
+        and I'll follow up by email.
+      </p>
+
+      <form id="codeAccessForm">
+        <label>
+          Who are you?
+          <select id="visitorType" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Recruiter / Hiring Manager">Recruiter / Hiring Manager</option>
+            <option value="Fellow Developer">Fellow Developer</option>
+            <option value="Student">Student</option>
+            <option value="Just Browsing">Just Browsing</option>
+          </select>
+        </label>
+
+        <label>
+          Your email
+          <input type="email" id="visitorEmail" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Anything to add? (optional)
+          <textarea id="visitorMessage" rows="3" placeholder="e.g. which role you're hiring for"></textarea>
+        </label>
+
+        <button type="submit" class="btn code-modal-submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-name">Afeziwe Thandani</p>
+
+    <p class="footer-tagline">
+      Software Developer • Full-Stack • Problem Solver
+    </p>
+
+    <p class="footer-copy">
+      © <span id="year"></span> All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+</html>
