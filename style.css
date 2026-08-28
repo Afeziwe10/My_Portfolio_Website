@@ -123,13 +123,13 @@ nav ul li a:hover {
 /* === Main Section === */
 .main {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     text-align: center;
-    padding: 0 20px;
+    padding: 110px 20px 50px;
 }
 /* Background Video */
 .hero-video{
@@ -848,6 +848,7 @@ nav ul li a:hover {
   }
 
   .buttons {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
@@ -935,6 +936,7 @@ nav ul li a:hover {
   position: fixed;
   inset: 0;
   background: rgba(20, 17, 13, 0.6);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
