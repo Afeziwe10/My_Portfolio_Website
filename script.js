@@ -171,6 +171,28 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+// === Persistent dark mode ===
+const themeToggles = document.querySelectorAll(".theme-toggle");
+
+function updateThemeToggles(isDark) {
+  themeToggles.forEach(toggle => {
+    const label = isDark ? "Enable light mode" : "Enable dark mode";
+    toggle.setAttribute("aria-label", label);
+    toggle.setAttribute("title", label);
+    toggle.innerHTML = `<i class="fa-solid ${isDark ? "fa-sun" : "fa-moon"}" aria-hidden="true"></i>`;
+  });
+}
+
+updateThemeToggles(document.documentElement.classList.contains("dark-mode"));
+
+themeToggles.forEach(toggle => {
+  toggle.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.toggle("dark-mode");
+    localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+    updateThemeToggles(isDark);
+  });
+});
+
 // === Projects page: filter tabs ===
 const filterBtns = document.querySelectorAll(".filter-btn");
 const projCards = document.querySelectorAll(".proj-card");

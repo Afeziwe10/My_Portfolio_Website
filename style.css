@@ -1052,6 +1052,198 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #D8CBB4;
+  border-radius: 50%;
+  background: transparent;
+  color: #3A362D;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.theme-toggle:hover {
+  color: #0F9E99;
+  border-color: #0F9E99;
+}
+
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body {
+  background-color: #171D21;
+  color: #E7ECEF;
+}
+
+html.dark-mode .navbar:not(.navbar-transparent) {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(15, 158, 153, 0.13), transparent 60%),
+    radial-gradient(circle at 90% 100%, rgba(15, 158, 153, 0.08), transparent 60%),
+    rgba(23, 29, 33, 0.96);
+  border-bottom-color: #344047;
+}
+
+html.dark-mode .navbar:not(.navbar-transparent) .nav-links a,
+html.dark-mode .theme-toggle {
+  color: #E7ECEF;
+}
+
+html.dark-mode .theme-toggle {
+  border-color: #56636B;
+}
+
+html.dark-mode .navbar.navbar-transparent .theme-toggle {
+  color: #F5F1E9;
+  border-color: rgba(245, 241, 233, 0.65);
+}
+
+html.dark-mode .nav-links a:hover,
+html.dark-mode .navbar:not(.navbar-transparent) .nav-links a:hover,
+html.dark-mode .theme-toggle:hover {
+  color: #5FCFC9;
+}
+
+html.dark-mode .navbar:not(.navbar-transparent) .hamburger span {
+  background: #5FCFC9;
+}
+
+html.dark-mode .about,
+html.dark-mode #contact,
+html.dark-mode .projects-section,
+html.dark-mode .certificates,
+html.dark-mode .about-hero,
+html.dark-mode .about-panels,
+html.dark-mode .about-values,
+html.dark-mode .contact-page {
+  background-color: #171D21;
+}
+
+html.dark-mode .about-panel,
+html.dark-mode .about-stats,
+html.dark-mode .about-panels-grid,
+html.dark-mode .proj-card,
+html.dark-mode .cert-card,
+html.dark-mode .contact-card,
+html.dark-mode .code-modal {
+  background-color: #222B31;
+  border-color: #39464E;
+}
+
+html.dark-mode .skill-icon {
+  background: #2A343B;
+  border-color: #39464E;
+}
+
+html.dark-mode .progress {
+  background: #39464E;
+}
+
+html.dark-mode .proj-thumb {
+  background-color: #20292F;
+}
+
+html.dark-mode .proj-thumb.project-logo-thumb {
+  background-color: #F1EFF8;
+}
+
+html.dark-mode .proj-thumb.app-thumb {
+  background-color: #14110D;
+}
+
+html.dark-mode .footer {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(15, 158, 153, 0.08), transparent 55%),
+    #20272C;
+  border-top-color: #39464E;
+}
+
+html.dark-mode .main-context h1,
+html.dark-mode .main-context h2,
+html.dark-mode .hero-desc,
+html.dark-mode #contact h2,
+html.dark-mode .section-title,
+html.dark-mode .about-hero-text h1,
+html.dark-mode .stat-card h3,
+html.dark-mode .skill-top p,
+html.dark-mode .approach-row h3,
+html.dark-mode .value-card h3,
+html.dark-mode .proj-title-row h3,
+html.dark-mode .contact-info h2,
+html.dark-mode .card-text h3,
+html.dark-mode .info-row a,
+html.dark-mode .info-value,
+html.dark-mode .contact-socials a,
+html.dark-mode .code-modal h3,
+html.dark-mode #codeAccessForm label {
+  color: #E7ECEF;
+}
+
+html.dark-mode .story-col p,
+html.dark-mode .about-hero-text > p,
+html.dark-mode .stat-card p,
+html.dark-mode .panel-story > p,
+html.dark-mode .approach-row p,
+html.dark-mode .value-card p,
+html.dark-mode .projects-hero,
+html.dark-mode .proj-desc,
+html.dark-mode .proj-title-row a,
+html.dark-mode .home-contact-desc,
+html.dark-mode .contact-email small,
+html.dark-mode .contact-info > p,
+html.dark-mode .card-text p,
+html.dark-mode .footer-tagline,
+html.dark-mode .footer-copy,
+html.dark-mode .code-modal-sub,
+html.dark-mode .code-modal-close {
+  color: #B5C0C6;
+}
+
+html.dark-mode .approach-row {
+  border-bottom-color: #39464E;
+}
+
+html.dark-mode .project-filters .filter-btn {
+  border-color: #56636B;
+  color: #D6DEE2;
+}
+
+html.dark-mode .project-filters .filter-btn.active {
+  background: #0F9E99;
+  border-color: #0F9E99;
+  color: #101719;
+}
+
+html.dark-mode .proj-tags span {
+  border-color: #56636B;
+  color: #D6DEE2;
+}
+
+html.dark-mode .contact-socials a {
+  border-color: #39464E;
+}
+
+html.dark-mode #codeAccessForm select,
+html.dark-mode #codeAccessForm input,
+html.dark-mode #codeAccessForm textarea {
+  background: #171D21;
+  border-color: #56636B;
+  color: #E7ECEF;
+}
+
+@media (max-width: 900px) {
+  html.dark-mode .nav-links {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(15, 158, 153, 0.12), transparent 55%),
+      #171D21;
+  }
+}
+
 @media (max-width: 480px) {
   .code-modal {
     padding: 26px 22px;
