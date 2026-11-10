@@ -584,6 +584,19 @@ nav ul li a:hover {
   transition: transform 0.5s ease;
 }
 
+.proj-thumb.project-logo-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F1EFF8;
+}
+
+.proj-thumb.project-logo-thumb img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
 .proj-card:hover .proj-thumb img {
   transform: scale(1.06);
 }
